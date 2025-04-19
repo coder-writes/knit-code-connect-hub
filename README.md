@@ -1,10 +1,5 @@
 # Welcome to your PTSC_WEBSITE project
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
+# Deploy Link :- https://knit-code-connect-hub.vercel.app/
 
 
 **Use your preferred IDE**
