@@ -11,10 +11,10 @@ interface TimeLeft {
 
 export default function EventCountdown() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: 10,
+    hours: 12,
+    minutes: 1,
+    seconds: 2
   });
 
   useEffect(() => {

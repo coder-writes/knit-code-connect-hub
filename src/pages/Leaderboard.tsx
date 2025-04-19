@@ -53,6 +53,14 @@ export default function Leaderboard() {
                   <label className="block text-sm font-medium mb-2">GeeksForGeeks Profile URL</label>
                   <Input required type="url" />
                 </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Codechef Profile URL</label>
+                  <Input required type="url" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">CodeForces Profile URL</label>
+                  <Input required type="url" />
+                </div>
                 <Button type="submit">Submit</Button>
               </form>
             </Card>

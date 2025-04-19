@@ -4,21 +4,27 @@ import { Card } from "@/components/ui/card";
 export default function Events() {
   const events = [
     {
-      title: "Hackathon 2024",
-      date: "May 15, 2024",
-      description: "48-hour coding challenge to build innovative solutions",
+      title: "Decode_AI",
+      date: "April 19, 2025",
+      description: "Deep dive into Basic Concepts of AI and ML",
+      status: "Live"
+    },
+    {
+      title: "Short_INT 2025",
+      date: "To be announced",
+      description: "2-hour coding challenge to build innovative solutions",
       status: "upcoming"
     },
     {
-      title: "Web Development Workshop",
-      date: "April 25, 2024",
-      description: "Learn modern web development with React and Node.js",
-      status: "upcoming"
+      title: "HACK THE WEB",
+      date: "7 Jan, 2025",
+      description: "Learn Open Source Contribution and Github Collaration",
+      status: "past"
     },
     {
-      title: "DSA Masterclass",
-      date: "March 30, 2024",
-      description: "Deep dive into advanced data structures and algorithms",
+      title: "LONG_INT",
+      date: "Jan 7, 2025",
+      description: "Deep dive into advanced data structures and algorithms and Competetive Programming",
       status: "past"
     }
   ];

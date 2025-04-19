@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/ptsc-logo.png" alt="PTSC Logo" className="h-10 w-10" />
+              <img src="/lovable-uploads/ptsc_logo.png" alt="PTSC Logo" className="h-10 w-10" />
               <span className="ml-2 text-xl font-bold text-cyan-600 dark:text-cyan-400">PTSC</span>
             </Link>
           </div>
