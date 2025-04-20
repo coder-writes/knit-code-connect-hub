@@ -6,8 +6,7 @@ Welcome to the official repository of the **Programming and Technical Skill Club
 
 ## 🚀 Live Demo
 
-[https://knit-code-connect-hub.vercel.app/](#)  
-*(Replace `#` with the actual deployed site URL)*
+[https://knit-code-connect-hub.vercel.app/]  
 
 ---
 
