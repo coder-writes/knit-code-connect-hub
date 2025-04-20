@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Moon, Sun, Menu } from "lucide-react";
@@ -25,19 +24,18 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-4">
-              <Link to="/" className="nav-link">Home</Link>
-              <Link to="/about" className="nav-link">About</Link>
-              <Link to="/team" className="nav-link">Team</Link>
-              <Link to="/events" className="nav-link">Events</Link>
-              <Link to="/resources" className="nav-link">Resources</Link>
-              <Link to="/leaderboard" className="nav-link">Leaderboard</Link>
-              <Link to="/contact" className="nav-link">Contact</Link>
-              <Button onClick={toggleTheme} variant="ghost" size="icon">
-                {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-              </Button>
-            </div>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/team" className="nav-link">Team</Link>
+            <Link to="/events" className="nav-link">Events</Link>
+            <Link to="/resources" className="nav-link">Resources</Link>
+            <Link to="/leaderboard" className="nav-link">Leaderboard</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/admin" className="nav-link font-semibold text-cyan-700 dark:text-cyan-400 underline">Admin Dashboard</Link>
+            <Button onClick={toggleTheme} variant="ghost" size="icon">
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,6 +57,7 @@ export default function Navbar() {
               <Link to="/resources" className="mobile-nav-link">Resources</Link>
               <Link to="/leaderboard" className="mobile-nav-link">Leaderboard</Link>
               <Link to="/contact" className="mobile-nav-link">Contact</Link>
+              <Link to="/admin" className="mobile-nav-link font-semibold text-cyan-700 dark:text-cyan-400 underline">Admin Dashboard</Link>
             </div>
           </div>
         )}

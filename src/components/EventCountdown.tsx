@@ -11,25 +11,27 @@ interface TimeLeft {
 
 export default function EventCountdown() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-    days: 10,
-    hours: 12,
-    minutes: 1,
-    seconds: 2
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
 
   useEffect(() => {
-    const nextEvent = new Date('2024-05-15'); // Hackathon date
+    const nextEvent = new Date("2024-05-15"); // Hackathon date
 
     const calculateTimeLeft = () => {
       const difference = +nextEvent - +new Date();
-      
+
       if (difference > 0) {
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60)
+          seconds: Math.floor((difference / 1000) % 60),
         });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
 
